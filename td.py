@@ -8,17 +8,19 @@ field. """
 
 from scipy import *
 import sys, time
-import pylab
 
-#from pybrain.rl.environments.mazes import Maze, MDPMazeTask
+
 from maze import Maze
 from mdp import MDPMazeTask
 from pybrain.rl.learners.valuebased import ActionValueTable
 from pybrain.rl.agents import LearningAgent
-from pybrain.rl.learners import Q, QLambda, SARSA #@UnusedImport
-from pybrain.rl.explorers import BoltzmannExplorer #@UnusedImport
+from pybrain.rl.learners import Q, QLambda
 from pybrain.rl.experiments import Experiment
 from pybrain.rl.environments import Task
+
+import pylab
+pylab.gray()
+pylab.ion()
 
 
 # create the maze with walls (1)
