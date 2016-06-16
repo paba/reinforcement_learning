@@ -7,8 +7,8 @@ fully observable MDP maze task. The goal point is the top right free
 field. """
 
 from scipy import *
-import sys, time
-import numpy as np
+#import sys, time
+#import numpy as np
 
 
 from maze_menu_sequential import Maze
